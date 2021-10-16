@@ -25,7 +25,6 @@ int main()
   	std::cin >> num_workers;
   	predictor.predict(std::move(samples), num_workers);
   	predictor.display(sample_count);
-  	std::cout<<samples.size()<<std::endl;
   	// stop time measurement and print execution time
     std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
     auto duration = std::chrono::duration_cast<std::chrono::milliseconds>( t2 - t1 ).count();
