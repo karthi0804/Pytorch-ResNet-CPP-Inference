@@ -12,7 +12,7 @@ The project provides the model which is trained on ImageNet and can be used to c
 * OpenCV >= 3.0
   * [click here for installation instructions](https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html)
 * LibTorch 
-  * wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip
+  * wget https://download.pytorch.org/libtorch/cpu/libtorch-cxx11-abi-shared-with-deps-1.9.1%2Bcpu.zip
   * unzip libtorch-shared-with-deps-latest.zip
 * Python Torch >=1.9
   * pip install torch torchvision
