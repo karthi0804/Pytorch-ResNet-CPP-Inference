@@ -1,4 +1,4 @@
-# CPPND: ResNet based Image classification using Pytorch C++
+# ResNet based Image classification using Pytorch C++
 
 The project provides the model which is trained on ImageNet and can be used to classify the images. The project uses multi-thread approach to calculate the model predictions.  
 
@@ -30,16 +30,20 @@ The project provides the model which is trained on ImageNet and can be used to c
 * gcc/g++ >= 5.4
   * gcc / g++ is installed by default on most Linux distros
 * OpenCV == 3.3.1
-  * git clone https://github.com/opencv/opencv.git
-  * cd opencv
-  * git checkout 3.3.1
-  * mkdir build && cd build
-  * cmake ..
-  * make -j4 (any number based on num of processors given by nproc)
-  * sudo make install
+ ```
+ git clone https://github.com/opencv/opencv.git
+ cd opencv
+ git checkout 3.3.1
+ mkdir build && cd build
+ cmake ..
+ make -j4 (any number based on num of processors given by nproc)
+ sudo make install
+ ```
 * LibTorch 
-  * wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip
-  * unzip libtorch-shared-with-deps-latest.zip
+ ```
+ wget https://download.pytorch.org/libtorch/nightly/cpu/libtorch-shared-with-deps-latest.zip
+ unzip libtorch-shared-with-deps-latest.zip
+ ```
 
 #### Usage
 
