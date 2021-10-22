@@ -2,21 +2,17 @@
 
 The project provides the model which is trained on ImageNet and can be used to classify the images. The project uses multi-thread approach to calculate the model predictions.  
 
-## Run Using Docker (Recommended & tested with Docker 20.10.7)
+## Run Using Docker (tested with Docker 20.10.7)
 
-### Dependencies Installation
- * Pull the Docker image for required dependencies.
-   *  Clone this repo
-   * `docker pull karthi0804/pytorch-resnet-cpp:deploy` - it takes around 10 mins! 
-   * `docker run --rm -it -v /absolute/path/to/repo:/classifier karthi0804/pytorch-resnet-cpp:deploy`
-
-### Usage
-
-1. Go to project root`cd /classifier`.
-2. Make a build directory in the top level directory: `mkdir build && cd build`
-3. Compile: `cmake -DCMAKE_PREFIX_PATH=/libtorch .. && make`
-4. Run it: `./Pytorch-CNN-classifier`.
-5. Modify the `pic/` folder to add custom images.
+ * Clone this repo.
+ * Pull the docker image environment using `docker pull karthi0804/pytorch-resnet-cpp:deploy` - it takes around 10 mins! 
+ * Run the docker contianer using `docker run --rm -it -v /absolute/path/to/repo:/classifier karthi0804/pytorch-resnet-cpp:deploy`
+ * If the docker container is up successfully, you fill find the git code under the directory `classifier` inside the container. Please check by using `root@XXXXXXXXXXXXXX:/# ls`
+ * Go to project root using `root@XXXXXXXXXXXXXX:/# cd /classifier` inside the docker container.
+ * Make a build directory in the top level directory: `mkdir build && cd build` inside the docker container.
+ * Compile: `cmake -DCMAKE_PREFIX_PATH=/libtorch .. && make` inside the docker container.
+ * Run it: `./Pytorch-CNN-classifier` inside the docker container.
+ * Modify the `pic/` folder to add custom images.
  
 ## Model Output
 ```
