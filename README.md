@@ -33,21 +33,3 @@ Inference took 2214 milliseconds
   *  `predict` : splits the dataset and spawns multiple threads with each batch.
   *  `display` : collects the model output from the threads and prints the Top-K predictions along with their probability.
 * `model.py` : to generate torch script file.
-
-## Rubric Info
-
-* Loops, Functions, I/O :
-  * C++ functions and control structures. : demonstarted in many places. for example `inference.cpp 104:114`   
-  * The project reads data from a file and process the data, or the program writes data to a file. : `inference.cpp 104:114` 
-  * The project accepts user input and processes the input. : `main.cpp:25` to get the number of threads.
-* Object Oriented Programming:
-  * Classes encapsulate behavior, Templates, Class constructors utilize member initialization lists, Classes encapsulate behavior : `inference.h`
-* Memory Management:
-  * The project makes use of references in function declarations. : `inference.cpp:90`
-  * The project follows the Rule of 5. : `inference.cpp 27:88`
-  * The project uses move semantics to move data, instead of copying it, where possible. `inference.h 144`
-  * The project uses smart pointers instead of raw pointers.: `inference.h 62`
-* Concurrency:
-  * The project uses multithreading.: `inference.cpp:159`
-  * A mutex or lock is used in the project. : `inference.cpp: 128:130`
-  * A condition variable is used in the project. : `inference.cpp: 10:19`
